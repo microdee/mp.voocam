@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.103.dtd" >
-   <PATCH nodename="F:\vvvv\libs\md.ecosystem\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" systemname="SpaceMouse (VOOCAM VJoy)" filename="C:\vvvv\libs\mcropack\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
+   <PATCH nodename="D:\vvvv\projects\Uberact\WON-1.1-ARC-LB\libraries\vvvv_bb_34.104_x64\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" systemname="SpaceMouse (VOOCAM VJoy)" filename="C:\vvvv\libs\mcropack\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" scrollx="1485" scrolly="0">
    <BOUNDS type="Window" left="270" top="1560" width="14565" height="9915">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -295,7 +295,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5220" top="7110" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -477,7 +477,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11160" top="2100" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="+Y">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="-Z">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Y is|">
    </PIN>
@@ -491,7 +491,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11970" top="2055" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="-Z">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="+Y">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Z is|">
    </PIN>
@@ -505,7 +505,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13335" top="1995" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="-X">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="+X">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Pitch is|">
    </PIN>
@@ -519,7 +519,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14220" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="-Y">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="-Z">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Yaw is|">
    </PIN>
@@ -533,7 +533,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15030" top="1980" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="-Z">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="+Y">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Roll is|">
    </PIN>
@@ -1021,9 +1021,9 @@
    <LINK srcnodeid="172" srcpinname="Output" dstnodeid="145" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="20475" top="3795" width="480" height="480">
+   <BOUNDS type="Box" left="21675" top="3795" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="20475" top="3795" width="0" height="0">
+   <BOUNDS type="Node" left="21675" top="3795" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1323,6 +1323,8 @@
    </PIN>
    <PIN pinname="Update" visible="1">
    </PIN>
+   <PIN pinname="AutoSense" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="135" srcpinname="Far" dstnodeid="204" dstpinname="Far">
    </LINK>
@@ -1423,6 +1425,8 @@
    </PIN>
    <PIN pinname="Update" visible="1">
    </PIN>
+   <PIN pinname="AutoSense" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Inverse Output" dstnodeid="207" dstpinname="Update">
    </LINK>
@@ -1478,6 +1482,8 @@
    <PIN pinname="RotationXYZW" visible="1" slicecount="4" values="0,0,0,0">
    </PIN>
    <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="AutoSense" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output 1" dstnodeid="209" dstpinname="Input">
@@ -1564,4 +1570,230 @@
    </LINK>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="213">
+   <BOUNDS type="Node" left="19170" top="3075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Execute" visible="1">
+   </PIN>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Window" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV Safe)" filename="%VVVV%\packs\mp.essentials\nodes\modules\vvvv\OnOpen (VVVV Safe).v4p" nodename="OnOpen (VVVV Safe)" componentmode="Hidden" id="214">
+   <BOUNDS type="Node" left="22020" top="1095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="215">
+   <BOUNDS type="Node" left="20085" top="2175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="216" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="20070" top="975" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20070" top="975" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Autostart Sx2vJoy|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="216" srcpinname="Y Output Value" dstnodeid="215" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="215" srcpinname="Output" dstnodeid="213" dstpinname="Execute">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="217" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="19155" top="2580" width="1380" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="19155" top="2580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Sx2vJoy.exe">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="213" dstpinname="File">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="218">
+   <BOUNDS type="Node" left="21075" top="2505" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="21075" top="2505" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Sx2vJoy Config|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="220">
+   <BOUNDS type="Node" left="20160" top="4005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Window" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="219" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="20145" top="3510" width="1380" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20145" top="3510" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Sx2vJoy Config GUI.exe|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="219" srcpinname="Output String" dstnodeid="220" dstpinname="File">
+   </LINK>
+   <LINK srcnodeid="218" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Execute">
+   </LINK>
+   <NODE systemname="Processes (Windows)" nodename="Processes (Windows)" componentmode="Hidden" id="221">
+   <BOUNDS type="Node" left="23145" top="1950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="214" srcpinname="Output" dstnodeid="221" dstpinname="Update">
+   </LINK>
+   <NODE systemname="RelativePath (File)" nodename="RelativePath (File)" componentmode="Hidden" id="222">
+   <BOUNDS type="Node" left="22305" top="2790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   <PIN pinname="Relative Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="222" dstpinname="Absolute Path">
+   </LINK>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="223">
+   <BOUNDS type="Node" left="23475" top="3030" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filter" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="222" srcpinname="Relative Path" dstnodeid="223" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="221" srcpinname="Filename" dstnodeid="223" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="224">
+   <BOUNDS type="Node" left="23460" top="3615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="223" srcpinname="Hits" dstnodeid="224" dstpinname="Input">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="225">
+   <BOUNDS type="Node" left="23475" top="4095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="224" srcpinname="Output" dstnodeid="225" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="225" srcpinname="Output" dstnodeid="215" dstpinname="Input 3">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="226" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="16800" top="7365" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16800" top="7365" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="181" srcpinname="Position Out" dstnodeid="226" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="227" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18120" top="7290" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18120" top="7290" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="181" srcpinname="Rotation Out" dstnodeid="227" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="228">
+   <BOUNDS type="Node" left="20835" top="1425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="214" srcpinname="Output" dstnodeid="228" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="228" srcpinname="Output 1" dstnodeid="215" dstpinname="Input 2">
+   </LINK>
    </PATCH>
