@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="F:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.voocam\nodes\modules\Sequencer (VOOCAM).v4p" systemname="Sequencer (VOOCAM)" filename="C:\vvvv\libs\mcropack\nodes\Modules\Sequencer (VOOCAM).v4p" scrollx="195" scrolly="240">
-   <BOUNDS type="Window" left="18750" top="3120" width="18360" height="12240">
+   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.voocam\nodes\modules\Sequencer (VOOCAM).v4p" systemname="Sequencer (VOOCAM)" filename="C:\vvvv\libs\mcropack\nodes\Modules\Sequencer (VOOCAM).v4p" scrollx="195" scrolly="240">
+   <BOUNDS type="Window" left="7005" top="3990" width="18360" height="12240">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>

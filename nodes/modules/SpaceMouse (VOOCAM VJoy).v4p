@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="D:\vvvv\projects\Uberact\WON-1.1-ARC-LB\libraries\vvvv_bb_34.104_x64\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" systemname="SpaceMouse (VOOCAM VJoy)" filename="C:\vvvv\libs\mcropack\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" scrollx="1485" scrolly="0">
+   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" systemname="SpaceMouse (VOOCAM VJoy)" filename="C:\vvvv\libs\mcropack\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM VJoy).v4p" scrollx="8295" scrolly="0">
    <BOUNDS type="Window" left="270" top="1560" width="14565" height="9915">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -1040,7 +1040,7 @@
    </NODE>
    <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="JoystickCoordinateSystem (3d)" filename="JoystickCoordinateSystem (3d).v4p" componentmode="Hidden" id="181" nodename="JoystickCoordinateSystem (3d)">
+   <NODE systemname="JoystickCoordinateSystem (3d)" filename="%VVVV%\packs\mp.voocam\nodes\modules\JoystickCoordinateSystem (3d).v4p" componentmode="Hidden" id="181" nodename="JoystickCoordinateSystem (3d)">
    <BOUNDS type="Node" left="12045" top="6300" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="12045" top="6300" width="4800" height="3600">
@@ -1629,7 +1629,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="19155" top="2580" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Sx2vJoy.exe">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Sx2vJoy\Sx2vJoy.exe">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
    </PIN>
