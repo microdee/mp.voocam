@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.103.dtd" >
-   <PATCH nodename="F:\vvvv\libs\md.ecosystem\packs\mp.voocam\girlpower\VOOCAM.v4p" scrollx="0" scrolly="165" systemname="ModularCam" filename="C:\vvvv\libs\mcropack\girlpower\ModularCam.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
+   <PATCH nodename="C:\vvvv\libs\md.ecosystem\packs\mp.voocam\girlpower\VOOCAM.v4p" scrollx="0" scrolly="0" systemname="ModularCam" filename="C:\vvvv\libs\mcropack\girlpower\ModularCam.v4p">
    <BOUNDS type="Window" left="1650" top="5550" width="13320" height="9180">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -474,9 +474,9 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum forground fps">
+   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum background fpsS">
+   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4365" top="10575" width="795" height="240">
@@ -589,7 +589,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1050" top="15675" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="11400" top="2145" width="15210" height="9795">
+   <BOUNDS type="Window" left="13290" top="2160" width="15210" height="9795">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -605,15 +605,17 @@
    </PIN>
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
    </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Layer Out" dstnodeid="4" dstpinname="Layers">
    </LINK>
-   <NODE id="1" systemname="MouseKeyboard (VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\MouseKeyboard (VOOCAM).v4p" componentmode="Hidden" nodename="MouseKeyboard (VOOCAM)" debug="0">
+   <NODE id="1" systemname="MouseKeyboard (VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\MouseKeyboard (VOOCAM).v4p" componentmode="Hidden" nodename="MouseKeyboard (VOOCAM)" debug="0" border="1">
    <BOUNDS type="Node" left="5010" top="3705" width="1380" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5010" top="3705" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="29250" top="1695" width="23175" height="13170">
+   <BOUNDS type="Window" left="2745" top="2175" width="16425" height="12150">
    </BOUNDS>
    <PIN pinname="Camera In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -621,11 +623,13 @@
    </PIN>
    <PIN pinname="Ignore Keys" slicecount="2" values="Menu,Space">
    </PIN>
+   <PIN pinname="ID" visible="-1" pintype="Output">
+   </PIN>
    </NODE>
    <NODE id="3" componentmode="Hidden" debug="0" systemname="Camera (Transform VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\Camera (Transform VOOCAM).v4p" nodename="Camera (Transform VOOCAM)">
    <BOUNDS type="Node" left="3375" top="2145" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="14700" top="2325" width="19170" height="10635">
+   <BOUNDS type="Window" left="1275" top="1680" width="19170" height="10635">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -751,9 +755,9 @@
    <LINK srcnodeid="86" srcpinname="Failed" dstnodeid="88" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6255" top="4365" width="3390" height="270">
+   <BOUNDS type="Node" left="6510" top="5610" width="3390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6255" top="4365" width="4125" height="525">
+   <BOUNDS type="Box" left="6510" top="5610" width="4125" height="525">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Uses HID node and it works without their UX nightmare crapware. For stability there&apos;s a vJoy based version|">
    </PIN>
