@@ -629,7 +629,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Rotation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector4D Rotation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector4d Rotation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -665,7 +665,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Rotation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector4D Rotation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector4d Rotation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -681,7 +681,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Rotation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector4D Rotation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector4d Rotation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -695,7 +695,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Rotation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector4D Rotation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector4d Rotation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -713,7 +713,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Translation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector3D Translation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector3d Translation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -727,7 +727,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Translation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector3D Translation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector3d Translation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -863,7 +863,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Translation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector3D Translation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector3d Translation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -879,7 +879,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraData.Translation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector3D Translation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector3d Translation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1061,7 +1061,7 @@
    </BOUNDS>
    <PIN pinname="Formular" slicecount="1" values="CameraCalculated.CameraRotation">
    </PIN>
-   <PIN pinname="Definition" slicecount="1" values="|Vector4D CameraRotation|">
+   <PIN pinname="Definition" slicecount="1" values="|Vector4d CameraRotation|">
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>

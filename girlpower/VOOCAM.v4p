@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\libs\md.ecosystem\packs\mp.voocam\girlpower\VOOCAM.v4p" scrollx="0" scrolly="0" systemname="ModularCam" filename="C:\vvvv\libs\mcropack\girlpower\ModularCam.v4p">
-   <BOUNDS type="Window" left="1650" top="5550" width="13320" height="9180">
+<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\vvvv\libs\md.ecosystem\packs\mp.voocam\girlpower\VOOCAM.v4p" scrollx="0" scrolly="-360" systemname="ModularCam" filename="C:\vvvv\libs\mcropack\girlpower\ModularCam.v4p">
+   <BOUNDS type="Window" left="1860" top="3840" width="13320" height="9180">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -248,20 +248,6 @@
    </NODE>
    <LINK srcnodeid="37" srcpinname="Output" dstnodeid="29" dstpinname="Input">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="48" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5160" top="2265" width="1035" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5160" top="2265" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="ActiveData">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
    <NODE systemname="PhongPoint (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongPoint.fx" nodename="PhongPoint (DX11.Effect)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="1335" top="11940" width="2850" height="270">
    </BOUNDS>
@@ -333,9 +319,11 @@
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="2550" top="4275" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="3" values="0,0,0">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="31" dstpinname="Input">
@@ -570,18 +558,6 @@
    </NODE>
    <LINK srcnodeid="83" srcpinname="Whole Part" dstnodeid="84" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="GetObject (VObjectCollection)" filename="%VVVV%\packs\VObjects\nodes\plugins\VVVV.Nodes.VObjects.dll" nodename="GetObject (VObjectCollection)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="5010" top="2700" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filter" visible="1">
-   </PIN>
-   <PIN pinname="Source" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="48" srcpinname="Output String" dstnodeid="47" dstpinname="Filter">
-   </LINK>
    <NODE id="4" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow">
    <PIN pinname="Window Handle" visible="1" pintype="Output">
    </PIN>
@@ -609,66 +585,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Layer Out" dstnodeid="4" dstpinname="Layers">
-   </LINK>
-   <NODE id="1" systemname="MouseKeyboard (VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\MouseKeyboard (VOOCAM).v4p" componentmode="Hidden" nodename="MouseKeyboard (VOOCAM)" debug="0" border="1">
-   <BOUNDS type="Node" left="5010" top="3705" width="1380" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5010" top="3705" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2745" top="2175" width="16425" height="12150">
-   </BOUNDS>
-   <PIN pinname="Camera In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Camera Thru" visible="1">
-   </PIN>
-   <PIN pinname="Ignore Keys" slicecount="2" values="Menu,Space">
-   </PIN>
-   <PIN pinname="ID" visible="-1" pintype="Output">
-   </PIN>
-   </NODE>
-   <NODE id="3" componentmode="Hidden" debug="0" systemname="Camera (Transform VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\Camera (Transform VOOCAM).v4p" nodename="Camera (Transform VOOCAM)">
-   <BOUNDS type="Node" left="3375" top="2145" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1275" top="1680" width="19170" height="10635">
-   </BOUNDS>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="PivotDistance" visible="1">
-   </PIN>
-   <PIN pinname="Camera Out" visible="1">
-   </PIN>
-   <PIN pinname="Near" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Target Window Handle" visible="1" slicecount="1" values="1837256">
-   </PIN>
-   <PIN pinname="Far" slicecount="1" values="100">
-   </PIN>
-   <PIN pinname="TranslationXYZ" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Rotate XYZ" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="FOV" slicecount="1" values="0.21">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="3" dstpinname="PivotDistance">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Reset">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Window Handle" dstnodeid="3" dstpinname="Target Window Handle" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Camera Out" dstnodeid="47" dstpinname="Source">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Projection" dstnodeid="4" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="View" dstnodeid="4" dstpinname="View">
    </LINK>
    <NODE id="44" systemname="Perlin (3d)" nodename="Perlin (3d)" componentmode="Hidden">
    <BOUNDS type="Node" left="2265" top="8625" width="100" height="100">
@@ -755,9 +671,9 @@
    <LINK srcnodeid="86" srcpinname="Failed" dstnodeid="88" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6510" top="5610" width="3390" height="270">
+   <BOUNDS type="Node" left="5550" top="3825" width="3390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6510" top="5610" width="4125" height="525">
+   <BOUNDS type="Box" left="5550" top="3825" width="4125" height="525">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Uses HID node and it works without their UX nightmare crapware. For stability there&apos;s a vJoy based version|">
    </PIN>
@@ -768,10 +684,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Split (Message Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Split (Message Formular)" componentmode="InAWindow" id="46">
-   <BOUNDS type="Node" left="3315" top="3120" width="100" height="100">
+   <NODE systemname="Split (Message Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Split (Message Formular)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="3480" top="3420" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Formular" slicecount="1" values="CameraData.Translation">
+   <PIN pinname="Formular" slicecount="1" values="None">
    </PIN>
    <PIN pinname="Definition" slicecount="1" values="|Vector3D Translation|">
    </PIN>
@@ -779,41 +695,17 @@
    </PIN>
    <PIN pinname="Primitive Object" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|Vector3d Translation|">
+   <PIN pinname="Configuration" slicecount="1" values="|Vector3d Position|">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
-   </NODE>
-   <NODE systemname="FilterType (Object)" filename="%VVVV%\packs\VObjects\nodes\plugins\VVVV.Nodes.VObjects.dll" nodename="FilterType (Object)" componentmode="Hidden" id="93">
-   <BOUNDS type="Node" left="5565" top="3090" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Type Reference Object" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Type" slicecount="1" values="|VVVV.Packs.Messaging.Message, VVVV.Packs.Messaging, Version=2.2.5917.24430, Culture=neutral, PublicKeyToken=null|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
+   <PIN pinname="PositionXYZ" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Create (Message.Keep Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Create (Message.Keep Formular)" componentmode="Hidden" id="94">
-   <BOUNDS type="Node" left="6255" top="1500" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="93" dstpinname="Type Reference Object">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="93" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="46" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="46" srcpinname="TranslationXYZ" dstnodeid="50" dstpinname="Input 2">
-   </LINK>
    <NODE id="52" componentmode="Hidden" systemname="SpaceMouse (VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM).v4p" nodename="SpaceMouse (VOOCAM)" debug="0">
-   <BOUNDS type="Node" left="4830" top="4350" width="100" height="100">
+   <BOUNDS type="Node" left="5250" top="3165" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="270" top="1560" width="14565" height="9915">
+   <BOUNDS type="Window" left="3690" top="-15525" width="22590" height="15525">
    </BOUNDS>
    <PIN pinname="Camera In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -830,8 +722,42 @@
    <PIN pinname="Time Mode" slicecount="1" values="Raw">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Camera Out" dstnodeid="1" dstpinname="Camera In">
+   <PACK Name="vvvv-Message" Version="2.7">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.0">
+   </PACK>
+   <NODE id="97" systemname="MouseKeyboard (VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\MouseKeyboard (VOOCAM).v4p" componentmode="Hidden" nodename="MouseKeyboard (VOOCAM)" debug="0" border="1">
+   <BOUNDS type="Node" left="5265" top="2640" width="1380" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5265" top="2640" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2955" top="1440" width="16425" height="12150">
+   </BOUNDS>
+   <PIN pinname="Camera Thru" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="PositionXYZ" dstnodeid="50" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Camera Thru" dstnodeid="52" dstpinname="Camera In">
+   <LINK srcnodeid="97" srcpinname="Camera Thru" dstnodeid="52" dstpinname="Camera In">
+   </LINK>
+   <NODE id="98" componentmode="Hidden" debug="0" systemname="Camera (Transform VOOCAM)" filename="%VVVV%\packs\mp.voocam\nodes\modules\Camera (Transform VOOCAM).v4p" nodename="Camera (Transform VOOCAM)">
+   <BOUNDS type="Node" left="3375" top="2145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16125" top="4260" width="19170" height="10635">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="98" dstpinname="PivotDistance">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="98" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Window Handle" dstnodeid="98" dstpinname="Target Window Handle" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Projection" dstnodeid="4" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="View" dstnodeid="4" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Calculated Camera" dstnodeid="46" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Camera Out" dstnodeid="97" dstpinname="Camera In">
    </LINK>
    </PATCH>
