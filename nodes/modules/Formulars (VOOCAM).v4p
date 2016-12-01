@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug34.100.dtd" >
    <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\mp.voocam\nodes\modules\Formulars (VOOCAM).v4p" scrollx="0" scrolly="0" systemname="Formulars (VOOCAM)" filename="F:\vvvv\libs\md.ecosystem\packs\mp.voocam\nodes\modules\Formulars (VOOCAM).v4p">
    <BOUNDS type="Window" left="7740" top="2745" width="15480" height="11145">
    </BOUNDS>

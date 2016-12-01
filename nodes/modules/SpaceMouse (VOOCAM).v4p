@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
-   <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM).v4p" systemname="SpaceMouse (VOOCAM)" filename="C:\vvvv\libs\mcropack\nodes\Modules\SpaceMouse (VOOCAM).v4p" scrollx="0" scrolly="3600">
-   <BOUNDS type="Window" left="3690" top="-15525" width="22590" height="15525">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug34.100.dtd" >
+   <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\mp.voocam\nodes\modules\SpaceMouse (VOOCAM).v4p" systemname="SpaceMouse (VOOCAM)" filename="C:\vvvv\libs\mcropack\nodes\Modules\SpaceMouse (VOOCAM).v4p" scrollx="0" scrolly="2970">
+   <BOUNDS type="Window" left="1530" top="5340" width="22590" height="15525">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
